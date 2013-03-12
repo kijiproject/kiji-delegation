@@ -45,7 +45,7 @@ import org.kiji.annotations.ApiAudience;
  * must subclass {@link NamedProvider}.
  */
 @ApiAudience.Private
-final class NamedLookup<T extends NamedProvider> extends Lookup<T> {
+public final class NamedLookup<T extends NamedProvider> extends Lookup<T> {
   private static final Logger LOG = LoggerFactory.getLogger(NamedLookup.class);
 
   /** Underlying Lookup instance that does the heavy lifting. */
